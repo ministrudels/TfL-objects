@@ -53,7 +53,7 @@ def store_video(camera, md5hash, dt):
             'checksum': checksum,
             'videoUrl': videoUrl
         }
-        requests.get(self.api_url + 'video_details/insert', args)
+        requests.get(API_ENDPOINT + 'video_details/insert', args)
         return 1
 
 def main(argv):
